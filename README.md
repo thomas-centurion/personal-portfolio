@@ -32,7 +32,7 @@ Personal portfolio built with React to showcase my projects, skills and experien
 Clone the repository
 
 ```bash
-git clone https://github.com/TU-USUARIO/TU-REPO.git
+git clone https://github.com/thomas-centurion/personal-portfolio
 ```
 
 Install dependencies
@@ -71,4 +71,4 @@ src/
 
 - GitHub: https://github.com/thomas-centurion
 - LinkedIn: https://www.linkedin.com/in/thomascenturion/
-- Email: thomascenturion927@gmail.com
+- Email: tcenturion.dev@gmail.com
