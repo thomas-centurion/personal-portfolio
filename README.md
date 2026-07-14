@@ -4,7 +4,7 @@ Personal portfolio built with React to showcase my projects, skills and experien
 
 ## Live Demo
 
-🔗 https://personal-portfolio-sage.vercel.app/
+🔗 https://thomas-centurion.vercel.app/
 
 ## Features
 
