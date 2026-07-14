@@ -1,5 +1,6 @@
 export const skillGroups = [
   {
+    id: 1,
     category: "Frontend",
     items: [
       "HTML",
@@ -11,6 +12,7 @@ export const skillGroups = [
     ],
   },
   {
+    id: 2,
     category: "Backend",
     items: [
       "Node.js",
@@ -19,6 +21,7 @@ export const skillGroups = [
     ],
   },
   {
+    id: 3,
     category: "Herramientas",
     items: [
       "Git",
@@ -27,6 +30,7 @@ export const skillGroups = [
     ],
   },
   {
+    id: 4,
     category: "Mi forma de trabajar",
     items: [
       "Código limpio",
