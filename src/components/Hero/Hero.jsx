@@ -45,7 +45,7 @@ function Hero() {
 
           <div className="hero-btns">
             <a ref={projectsButtonRef} href="#projects" className="btn-primary" > Ver proyectos </a>
-            <a ref={cvButtonRef} href="/CV.pdf" className="btn-secondary" download="CV_Thomas_Centurion.pdf" > Descargar CV </a>
+            <a ref={cvButtonRef} href="/CV_Thomas_Centurion.pdf" className="btn-secondary" download="CV_Thomas_Centurion.pdf" > Descargar CV </a>
             <a ref={contactButtonRef} href="#contact" className="btn-secondary" > Contactar </a>
 
           </div>

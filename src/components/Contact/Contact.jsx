@@ -108,11 +108,11 @@ function Contact() {
           </div>
 
           <div className="contact-buttons">
-            <a href="/CV.pdf" className="btn-secondary" download="CV_Thomas_Centurion.pdf" ref={downloadButtonRef} >
+            <a href="/CV_Thomas_Centurion.pdf" className="btn-secondary" download="CV_Thomas_Centurion.pdf" ref={downloadButtonRef} >
               Descargar CV
             </a>
 
-            <a href="" className="btn-secondary" target="_blank" rel="noopener noreferrer" ref={seeOnlineButtonRef} >
+            <a href="https://thomas-centurion.vercel.app/CV_Thomas_Centurion.pdf" className="btn-secondary" target="_blank" rel="noopener noreferrer" ref={seeOnlineButtonRef} >
               Ver online
             </a>
           </div>

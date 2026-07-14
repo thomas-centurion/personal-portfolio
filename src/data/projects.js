@@ -1,7 +1,7 @@
 // Placeholder
 import placeholder from "@/assets/images/projects/placeholder.webp";
 import portfolio from "@/assets/images/projects/portfolio.webp";
-import interactiveMap from "@/assets/images/projects/interactivemap.webp";
+import interactivemap from "@/assets/images/projects/interactivemap.webp";
 
 export const projects = [
   {
@@ -30,7 +30,7 @@ export const projects = [
     title: "Interactive Map",
     type: "Frontend",
     description: "Aplicación web interactiva desarrollada con JavaScript que permite explorar información general de los países directamente desde un mapa mundial. Al seleccionar un país, se muestran datos como bandera, capital, población, moneda, idiomas y fronteras mediante una interfaz dinámica e intuitiva.",
-    image: interactiveMap,
+    image: interactivemap,
     tags: ["HTML", "CSS", "JavaScript"],
     github: "https://github.com/thomas-centurion/interactive-map",
     demo: "https://thomas-centurion.github.io/interactive-map/",
