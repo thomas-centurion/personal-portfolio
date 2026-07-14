@@ -1,0 +1,61 @@
+:root {
+  /* Tipografía */
+  --font-family: "Inter", sans-serif;
+
+  /* Layout */
+  --container-width: 1280px;
+
+  /* Transiciones */
+  --transition: 0.25s ease;
+
+  --success: #22c55e;
+  --error: #ef4444;
+}
+
+/* ===========================
+   DARK THEME
+=========================== */
+
+[data-theme="dark"] {
+  --bg: #070708;
+  --bg2: #0b0b0d;
+  --bg3: #111113;
+
+  --nav-bg: rgba(10, 10, 10, 0.4);
+
+  --border-color: rgba(255, 255, 255, 0.05);
+  --border: #1e1e20;
+  --border-soft: #18181a;
+
+  --text: #e8e8ea;
+  --text-muted: #88889a;
+  --text-dim: #555566;
+
+  --white: #ffffff;
+
+  --overlay: rgba(0, 0, 0, 0.97);
+}
+
+/* ===========================
+   LIGHT THEME
+=========================== */
+
+[data-theme="light"] {
+  --bg: #f2f2f2;
+  --bg2: #ffffff;
+  --bg3: #eaeaea;
+
+  --nav-bg: rgba(242, 242, 242, 0.4);
+
+  --border-color: rgba(0, 0, 0, 0.05);
+  --border: #d4d4d4;
+  --border-soft: #e0e0e0;
+
+  --text: #111113;
+  --text-muted: #5a5a6a;
+  --text-dim: #9a9aaa;
+
+  --white: #111113;
+
+  --overlay: rgba(255, 255, 255, 0.97);
+}

@@ -1,0 +1,43 @@
+.btn-primary,
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 12px 32px;
+
+  text-decoration: none;
+
+  font-size: 0.82rem;
+  letter-spacing: -0.01em;
+
+  transition: all var(--transition);
+}
+
+.btn-primary {
+  background: var(--white);
+  color: var(--bg);
+
+  border: none;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  opacity: 0.85;
+}
+
+.btn-secondary {
+  background: transparent;
+
+  color: var(--text-muted);
+
+  border: 1px solid var(--border);
+
+  font-weight: 500;
+}
+
+.btn-secondary:hover {
+  border-color: var(--text);
+  color: var(--text);
+}
