@@ -1,25 +1,21 @@
-# Thomas Centurión - Portfolio
+# Personal Portfolio
 
-Personal portfolio built with React to showcase my projects, skills and experience as a Frontend Developer.
-
-## Live Demo
-
-🔗 https://thomas-centurion.vercel.app/
+A modern and responsive portfolio built with React to showcase my projects, skills and experience as a Frontend Developer. It features smooth animations, dark/light theme support, interactive UI elements and a functional contact form powered by EmailJS.
 
 ## Features
 
 - Responsive design
 - Dark / Light theme
+- Smooth scrolling
+- Animated typing effect
 - Custom cursor
 - Scroll progress indicator
-- Section animations
-- Project filtering
+- Interactive project filtering
 - Image lightbox
 - Contact form with EmailJS
-- Magnetic buttons
-- Smooth scrolling
+- Back to top button
 
-## Built With
+## Technologies
 
 - React
 - Vite
@@ -27,12 +23,20 @@ Personal portfolio built with React to showcase my projects, skills and experien
 - CSS3
 - EmailJS
 
+## Preview
+
+![Preview](./public/preview.webp)
+
+## Live Demo
+
+https://thomas-centurion.vercel.app/
+
 ## Installation
 
 Clone the repository
 
 ```bash
-git clone https://github.com/thomas-centurion/personal-portfolio
+git clone https://github.com/thomas-centurion/personal-portfolio.git
 ```
 
 Install dependencies
@@ -41,7 +45,7 @@ Install dependencies
 npm install
 ```
 
-Start the development server
+Run the development server
 
 ```bash
 npm run dev
@@ -53,22 +57,7 @@ Build for production
 npm run build
 ```
 
-## Project Structure
-
-```
-src/
-├── assets/
-├── components/
-├── data/
-├── hooks/
-├── services/
-├── styles/
-├── App.jsx
-└── main.jsx
-```
-
 ## Contact
 
-- GitHub: https://github.com/thomas-centurion
-- LinkedIn: https://www.linkedin.com/in/thomascenturion/
-- Email: tcenturion.dev@gmail.com
+LinkedIn: https://www.linkedin.com/in/thomascenturion/
+Email: tcenturion.dev@gmail.com
