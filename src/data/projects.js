@@ -2,6 +2,7 @@
 import placeholder from "@/assets/images/projects/placeholder.webp";
 import portfolio from "@/assets/images/projects/portfolio.webp";
 import interactivemap from "@/assets/images/projects/interactivemap.webp";
+import ecommerce from "@/assets/images/projects/ecommerce.webp";
 
 export const projects = [
   {
@@ -16,14 +17,13 @@ export const projects = [
   },
   {
     id: 2,
-    title: "Proyecto 02",
-    type: "Full Stack",
-    description:
-      "Descripción breve del proyecto. Explicar qué problema resuelve, qué tecnologías usé y cuál fue mi aporte principal.",
-    image: placeholder,
-    tags: ["HTML", "CSS", "React", "Firebase"],
-    github: "",
-    demo: "",
+    title: "E-commerce React",
+    type: "Frontend",
+    description: "Aplicación de e-commerce desarrollada con React que permite explorar productos, filtrarlos por categoría y gestionar un carrito de compras. Utiliza React Router para la navegación, Context API para el manejo del estado global y Firebase Firestore como base de datos para almacenar y obtener los productos.",
+    image: ecommerce,
+    tags: ["HTML", "CSS", "JavaScript", "React", "Firebase"],
+    github: "https://github.com/thomas-centurion/proyecto-ecommerce/tree/main",
+    demo: "https://tcenturion-ecommerce.vercel.app/",
   },
   {
     id: 3,
