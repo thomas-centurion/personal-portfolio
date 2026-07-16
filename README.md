@@ -60,4 +60,5 @@ npm run build
 ## Contact
 
 LinkedIn: https://www.linkedin.com/in/thomascenturion/
+
 Email: tcenturion.dev@gmail.com
