@@ -40,7 +40,7 @@ export const projects = [
     id: 4,
     title: "Football Tournament Manager",
     type: "Backend",
-    description: "API REST para gestionar torneos de fútbol, equipos, jugadores y partidos.",
+    description: "API REST desarrollada con Node.js y Express para gestionar torneos de fútbol 5, equipos, jugadores y partidos. Implementa una arquitectura por capas con Controllers, Services, Repositories y DAO, utilizando MongoDB y Mongoose para la persistencia de datos. Incluye validaciones de datos, relaciones entre entidades, manejo centralizado de errores, operaciones CRUD y generación de tablas de posiciones a partir de los resultados de los partidos.",
     image: footballtm,
     tags: ["Node.js", "Express", "MongoDB"],
     github: "https://github.com/thomas-centurion/football-tournament-manager",
