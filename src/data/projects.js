@@ -3,6 +3,7 @@ import placeholder from "@/assets/images/projects/placeholder.webp";
 import portfolio from "@/assets/images/projects/portfolio.webp";
 import interactivemap from "@/assets/images/projects/interactivemap.webp";
 import ecommerce from "@/assets/images/projects/ecommerce.webp";
+import footballtm from "@/assets/images/projects/footballtm.svg";
 
 export const projects = [
   {
@@ -35,4 +36,13 @@ export const projects = [
     github: "https://github.com/thomas-centurion/interactive-map",
     demo: "https://thomas-centurion.github.io/interactive-map/",
   },
+  {
+    id: 4,
+    title: "Football Tournament Manager",
+    type: "Backend",
+    description: "API REST para gestionar torneos de fútbol, equipos, jugadores y partidos.",
+    image: footballtm,
+    tags: ["Node.js", "Express", "MongoDB"],
+    github: "https://github.com/thomas-centurion/football-tournament-manager",
+},
 ];
