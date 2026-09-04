@@ -12,7 +12,7 @@ function useSectionParallax(ref) {
       const center = rect.top + rect.height / 2;
       const viewportCenter = window.innerHeight / 2;
 
-      const offset = (center - viewportCenter) * -0.04;
+      const offset = (center - viewportCenter) * -0.02;
 
       element.style.setProperty(
         "--parallax-offset",
