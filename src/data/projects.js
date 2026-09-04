@@ -12,7 +12,7 @@ export const projects = [
     type: "Frontend",
     description: "Mi portfolio personal desarrollado con React para presentar mis proyectos, habilidades y experiencia. Incluye diseño responsive, tema claro/oscuro, animaciones, cursor personalizado, filtros de proyectos, lightbox y un formulario de contacto funcional con EmailJS.",
     image: portfolio,
-    tags: ["HTML", "CSS", "JavaScript", "React", "EmailJS"],
+    tags: ["HTML", "CSS", "JavaScript", "React"],
     github: "https://github.com/thomas-centurion/personal-portfolio",
     demo: "https://thomas-centurion.vercel.app/",
   },

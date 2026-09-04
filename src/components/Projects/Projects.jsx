@@ -21,7 +21,6 @@ const filterOrder = [
   "Express",
   "MongoDB",
   "Firebase",
-  "EmailJS",
 ];
 
 function Projects() {
