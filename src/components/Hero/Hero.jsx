@@ -9,7 +9,7 @@ import useMagnetic from "@/hooks/useMagnetic";
 function Hero() {
   const text = useTyping([
     "Web Developer",
-    "Junior Frontend Dev",
+    "Junior Fullstack Dev",
     "Problem Solver",
   ]);
 
@@ -39,8 +39,8 @@ function Hero() {
           <p className="hero-desc">
             Desarrollador web y estudiante de Licenciatura en Sistemas,
             viviendo en Buenos Aires, Argentina. Me especializo en el
-            desarrollo frontend con React y actualmente estoy ampliando mis
-            conocimientos en backend con Node.js.
+            desarrollo frontend con React y también estoy desarrollando mis
+            primeras aplicaciones backend y full stack con Node.js, Express y MongoDB.
           </p>
 
           <div className="hero-btns">

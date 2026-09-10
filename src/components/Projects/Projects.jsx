@@ -12,6 +12,14 @@ import Lightbox from "./Lightbox";
 
 const ALL_FILTER = "all";
 
+const ALL_TYPE_FILTER = "all";
+
+const typeFilters = [
+  "Frontend",
+  "Backend",
+  "Fullstack",
+];
+
 const filterOrder = [
   "HTML",
   "CSS",
@@ -31,6 +39,8 @@ function Projects() {
   const { ref, isVisible } = useInView();
 
   const [filter, setFilter] = useState(ALL_FILTER);
+  const [typeFilter, setTypeFilter] = useState(ALL_TYPE_FILTER);
+
   const [selectedProject, setSelectedProject] = useState(null);
 
   const closeLightbox = () => {
@@ -51,14 +61,21 @@ function Projects() {
   }, []);
 
   const filteredProjects = useMemo(() => {
-    if (filter === ALL_FILTER) {
-      return projects;
-    }
 
-    return projects.filter((project) =>
-      project.tags.includes(filter)
-    );
-  }, [filter]);
+    return projects.filter((project) => {
+
+      const matchesType =
+        typeFilter === ALL_TYPE_FILTER ||
+        project.type === typeFilter;
+
+      const matchesTechnology =
+        filter === ALL_FILTER ||
+        project.tags.includes(filter);
+
+      return matchesType && matchesTechnology;
+    });
+
+  }, [filter, typeFilter]);
 
   return (
     <>
@@ -77,25 +94,50 @@ function Projects() {
             
           </div>
 
+          <div className="project-type-filters">
+
+            <button
+              type="button"
+              className={`filter-btn ${
+                typeFilter === ALL_TYPE_FILTER ? "active" : ""
+              }`}
+              onClick={() => setTypeFilter(ALL_TYPE_FILTER)}
+            >
+              Todos
+            </button>
+
+            {typeFilters.map((currentType) => (
+              <button
+                key={currentType}
+                type="button"
+                className={`filter-btn ${
+                  typeFilter === currentType ? "active" : ""
+                }`}
+                onClick={() => setTypeFilter(currentType)}
+              >
+                {currentType}
+              </button>
+            ))}
+
+          </div>
+
           <div className="project-filters">
+
             {filters.map((currentFilter) => (
               <button
                 key={currentFilter}
                 type="button"
                 className={`filter-btn ${
-                  filter === currentFilter
-                    ? "active"
-                    : ""
+                  filter === currentFilter ? "active" : ""
                 }`}
-                onClick={() =>
-                  setFilter(currentFilter)
-                }
+                onClick={() => setFilter(currentFilter)}
               >
                 {currentFilter === ALL_FILTER
                   ? "Todos"
                   : currentFilter}
               </button>
             ))}
+
           </div>
 
           <div className="projects-list">

@@ -1,9 +1,8 @@
-// Placeholder
-import placeholder from "@/assets/images/projects/placeholder.webp";
 import portfolio from "@/assets/images/projects/portfolio.webp";
 import interactivemap from "@/assets/images/projects/interactivemap.webp";
 import ecommerce from "@/assets/images/projects/ecommerce.webp";
 import footballtm from "@/assets/images/projects/footballtm.svg";
+import prime from "@/assets/images/projects/prime.webp"; 
 
 export const projects = [
   {
@@ -32,7 +31,7 @@ export const projects = [
     type: "Frontend",
     description: "Aplicación web interactiva desarrollada con JavaScript que permite explorar información general de los países directamente desde un mapa mundial. Al seleccionar un país, se muestran datos como bandera, capital, población, moneda, idiomas y fronteras mediante una interfaz dinámica e intuitiva.",
     image: interactivemap,
-    tags: ["HTML", "CSS", "JavaScript"],
+    tags: ["JavaScript"],
     github: "https://github.com/thomas-centurion/interactive-map",
     demo: "https://thomas-centurion.github.io/interactive-map/",
   },
@@ -45,4 +44,14 @@ export const projects = [
     tags: ["Node.js", "Express", "MongoDB"],
     github: "https://github.com/thomas-centurion/football-tournament-manager",
 },
+  {
+    id: 5,
+    title: "Prime Inmobiliaria",
+    type: "Fullstack",
+    description: "Aplicación web full stack completa para una inmobiliaria, desarrollada con React, Node.js, Express y MongoDB. Permite explorar y filtrar propiedades, consultar información detallada y enviar consultas, mientras que el panel de administración incorpora autenticación con JWT, gestión de propiedades y seguimiento de consultas. El proyecto implementa control de acceso por roles, validaciones, manejo de errores, protección de rutas y una interfaz responsive, integrando frontend, backend y base de datos en una aplicación completamente funcional.",
+    image: prime,
+    tags: ["React", "Node.js", "Express", "MongoDB"],
+    github: "https://github.com/thomas-centurion/prime-inmobiliaria",
+    demo: "https://prime-inmobiliaria.vercel.app/",
+  },
 ];

@@ -1,10 +1,18 @@
 /* ---------- DESKTOP ---------- */
 
+.project-type-filters,
 .project-filters {
   display: flex;
   gap: 8px;
-  margin-bottom: 40px;
   flex-wrap: wrap;
+}
+
+.project-type-filters {
+  margin-bottom: 24px;
+}
+
+.project-filters {
+  margin-bottom: 40px;
 }
 
 .filter-btn {
