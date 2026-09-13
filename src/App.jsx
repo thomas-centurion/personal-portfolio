@@ -8,7 +8,7 @@ import Footer from "@/components/Footer/Footer";
 import Cursor from "@/components/Cursor/Cursor";
 import ScrollProgress from "@/components/ScrollProgress/ScrollProgress";
 import BackToTop from "@/components/BackToTop/BackToTop";
-
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   return (
@@ -26,6 +26,7 @@ function App() {
       <Footer />
       <BackToTop />
       
+      <Analytics />
     </>
   );
 }
