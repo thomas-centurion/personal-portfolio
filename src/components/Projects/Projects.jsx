@@ -123,21 +123,6 @@ function Projects() {
 
           <div className="project-filters">
 
-            {filters.map((currentFilter) => (
-              <button
-                key={currentFilter}
-                type="button"
-                className={`filter-btn ${
-                  filter === currentFilter ? "active" : ""
-                }`}
-                onClick={() => setFilter(currentFilter)}
-              >
-                {currentFilter === ALL_FILTER
-                  ? "Todos"
-                  : currentFilter}
-              </button>
-            ))}
-
           </div>
 
           <div className="projects-list">

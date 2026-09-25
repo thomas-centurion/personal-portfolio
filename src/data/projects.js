@@ -3,6 +3,7 @@ import interactivemap from "@/assets/images/projects/interactivemap.webp";
 import ecommerce from "@/assets/images/projects/ecommerce.webp";
 import footballtm from "@/assets/images/projects/footballtm.svg";
 import prime from "@/assets/images/projects/prime.webp"; 
+import virgocueva from "@/assets/images/projects/virgocueva.svg"; 
 
 export const projects = [
   {
@@ -43,7 +44,7 @@ export const projects = [
     image: footballtm,
     tags: ["Node.js", "Express", "MongoDB"],
     github: "https://github.com/thomas-centurion/football-tournament-manager",
-},
+  },
   {
     id: 5,
     title: "Prime Inmobiliaria",
@@ -54,4 +55,13 @@ export const projects = [
     github: "https://github.com/thomas-centurion/prime-inmobiliaria",
     demo: "https://prime-inmobiliaria.vercel.app/",
   },
+  {
+  id: 6,
+  title: "La VirgoCueva",
+  type: "Fullstack",
+  description: "Red social privada desarrollada desde cero con React Native, Expo, TypeScript y Supabase, utilizando IA como herramienta de desarrollo. Incluye autenticación, perfiles, publicaciones con imágenes, likes, Revirgs, seguidores, comentarios, notificaciones, búsqueda de usuarios y almacenamiento seguro con Row Level Security.",
+  image: virgocueva,
+  tags: ["TypeScript", "React Native", "Expo", "Supabase", "PostgreSQL"],
+  github: "https://github.com/thomas-centurion/la-virgocueva",
+},
 ];
