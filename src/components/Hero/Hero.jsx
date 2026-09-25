@@ -8,8 +8,8 @@ import useMagnetic from "@/hooks/useMagnetic";
 
 function Hero() {
   const text = useTyping([
-    "Web Developer",
     "Junior Fullstack Dev",
+    "Web Developer",
     "Problem Solver",
   ]);
 
