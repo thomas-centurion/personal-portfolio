@@ -5,9 +5,9 @@ export const skillGroups = [
     items: [
       "HTML",
       "CSS",
-      "Bootstrap",
-      "SASS",
+      "Tailwind CSS",
       "JavaScript",
+      "TypeScript",
       "React",
     ],
   },
@@ -15,9 +15,13 @@ export const skillGroups = [
     id: 2,
     category: "Backend",
     items: [
+      "TypeScript",
       "Node.js",
       "Express.js",
+      "PostgreSQL",
       "MongoDB",
+      "JWT",
+      "bcrypt",
     ],
   },
   {
@@ -27,6 +31,8 @@ export const skillGroups = [
       "Git",
       "GitHub",
       "VS Code",
+      "Vercel",
+      "Supabase",
     ],
   },
   {
@@ -36,6 +42,7 @@ export const skillGroups = [
       "Código limpio",
       "Aprendizaje constante",
       "Atención a los detalles",
+      "Resolución de problemas",
     ],
   },
 ];

@@ -1,8 +1,8 @@
 import portfolio from "@/assets/images/projects/portfolio.webp";
-import interactivemap from "@/assets/images/projects/interactivemap.webp";
 import ecommerce from "@/assets/images/projects/ecommerce.webp";
 import footballtm from "@/assets/images/projects/footballtm.svg";
 import prime from "@/assets/images/projects/prime.webp"; 
+import gym from "@/assets/images/projects/gym.webp"; 
 import virgocueva from "@/assets/images/projects/virgocueva.svg"; 
 
 export const projects = [
@@ -28,16 +28,6 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Interactive Map",
-    type: "Frontend",
-    description: "Aplicación web interactiva desarrollada con JavaScript que permite explorar información general de los países directamente desde un mapa mundial. Al seleccionar un país, se muestran datos como bandera, capital, población, moneda, idiomas y fronteras mediante una interfaz dinámica e intuitiva.",
-    image: interactivemap,
-    tags: ["JavaScript"],
-    github: "https://github.com/thomas-centurion/interactive-map",
-    demo: "https://thomas-centurion.github.io/interactive-map/",
-  },
-  {
-    id: 4,
     title: "Football Tournament Manager",
     type: "Backend",
     description: "API REST desarrollada con Node.js y Express para gestionar torneos de fútbol 5, equipos, jugadores y partidos. Implementa una arquitectura por capas con Controllers, Services, Repositories y DAO, utilizando MongoDB y Mongoose para la persistencia de datos. Incluye validaciones de datos, relaciones entre entidades, manejo centralizado de errores, operaciones CRUD y generación de tablas de posiciones a partir de los resultados de los partidos.",
@@ -46,14 +36,24 @@ export const projects = [
     github: "https://github.com/thomas-centurion/football-tournament-manager",
   },
   {
-    id: 5,
+    id: 4,
     title: "Prime Inmobiliaria",
     type: "Fullstack",
-    description: "Aplicación web full stack completa para una inmobiliaria, desarrollada con React, Node.js, Express y MongoDB. Permite explorar y filtrar propiedades, consultar información detallada y enviar consultas, mientras que el panel de administración incorpora autenticación con JWT, gestión de propiedades y seguimiento de consultas. El proyecto implementa control de acceso por roles, validaciones, manejo de errores, protección de rutas y una interfaz responsive, integrando frontend, backend y base de datos en una aplicación completamente funcional.",
+    description: "Aplicación web full stack para una inmobiliaria, desarrollada con React, Node.js, Express y MongoDB. Permite explorar y filtrar propiedades, consultar información detallada y enviar consultas, mientras que el panel de administración incorpora autenticación con JWT y gestión de propiedades y consultas. El proyecto implementa control de acceso por roles, validaciones, manejo de errores, protección de rutas y una interfaz responsive.",
     image: prime,
-    tags: ["React", "Node.js", "Express", "MongoDB"],
+    tags: ["JavaScript", "React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/thomas-centurion/prime-inmobiliaria",
     demo: "https://prime-inmobiliaria.vercel.app/",
+  },
+  {
+    id: 5,
+    title: "Gym Management",
+    type: "Fullstack",
+    description: "Aplicación web full stack para la gestión de un gimnasio, desarrollada con React, TypeScript, Node.js, Express y PostgreSQL. Permite administrar socios, membresías, pagos y asistencias, con autenticación mediante JWT y control de acceso por roles. El proyecto implementa validaciones, manejo de errores, protección de rutas y una interfaz responsive, integrando frontend, backend y base de datos en una aplicación completamente funcional.",
+    image: gym,
+    tags: ["TypeScript", "React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL"],
+    github: "https://github.com/thomas-centurion/gym-management/tree/main",
+    demo: "https://gym-management-demo-frontend.vercel.app/",
   },
   {
   id: 6,
