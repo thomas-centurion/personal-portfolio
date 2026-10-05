@@ -38,9 +38,9 @@ function Hero() {
 
           <p className="hero-desc">
             Desarrollador web y estudiante de Licenciatura en Sistemas,
-            viviendo en Buenos Aires, Argentina. Me especializo en el
-            desarrollo frontend con React y también estoy desarrollando mis
-            primeras aplicaciones backend y full stack con Node.js, Express y MongoDB.
+            viviendo en Buenos Aires, Argentina. Desarrollo aplicaciones web
+            modernas y responsive, trabajando tanto en frontend como en
+            backend con tecnologías como TypeScript, ReactJS, Node.js, Express, MongoDB y PostgreSQL.
           </p>
 
           <div className="hero-btns">
