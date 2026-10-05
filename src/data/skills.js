@@ -5,6 +5,7 @@ export const skillGroups = [
     items: [
       "HTML",
       "CSS",
+      "Bootstrap",
       "Tailwind CSS",
       "JavaScript",
       "TypeScript",
