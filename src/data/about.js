@@ -1,32 +1,17 @@
-export const timeline = [
+export const education = [
   {
     id: 1,
-    date: "Hoy",
-    text: " Perfeccionando mis habilidades y profundizando en el desarrollo full stack.",
+    date: "2023 – Actualidad",
+    text: "Licenciatura en Sistemas — UNNOBA",
   },
   {
     id: 2,
-    date: "Agos. 2026",
-    text: "Comencé a desarrollar mis primeras aplicaciones full stack.",
+    date: "2025 – Actualidad",
+    text: "Carrera de Desarrollo Full Stack — Coderhouse",
   },
   {
     id: 3,
-    date: "Jun. 2026",
-    text: "Empecé a desarrollar aplicaciones con React.",
-  },
-  {
-    id: 4,
-    date: "Abr. 2026",
-    text: "Comencé a programar con JavaScript.",
-  },
-  {
-    id: 5,
-    date: "Feb. 2026",
-    text: "Incorporé Git, Bootstrap y SASS a mis proyectos.",
-  },
-  {
-    id: 6,
-    date: "Sept. 2025",
-    text: "Comencé mi camino en el desarrollo web.",
+    date: "2025",
+    text: "Responsive Web Design — freeCodeCamp",
   },
 ];

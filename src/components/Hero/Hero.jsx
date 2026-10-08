@@ -3,16 +3,9 @@ import "./Hero.css";
 import { useRef } from "react";
 
 import useParallax from "@/hooks/useParallax";
-import useTyping from "@/hooks/useTyping";
 import useMagnetic from "@/hooks/useMagnetic";
 
 function Hero() {
-  const text = useTyping([
-    "Junior Fullstack Dev",
-    "Web Developer",
-    "Problem Solver",
-  ]);
-
   const heroRef = useRef(null);
   const shapeRef = useRef(null);
 
@@ -30,17 +23,20 @@ function Hero() {
             <span className="hero-t1">Hola, soy</span>
             <span className="hero-t2">Thomas.</span>
             <span className="hero-t3">
-              <span className="typing-text"> {text} </span>
-
-              <span className="typing-line"> | </span>
+              Desarrollador Full&nbsp;Stack&nbsp;Junior
+              <span className="typing-line" aria-hidden="true"> | </span>
             </span>
           </h1>
 
           <p className="hero-desc">
-            Desarrollador web y estudiante de Licenciatura en Sistemas,
-            viviendo en Buenos Aires, Argentina. Desarrollo aplicaciones web
-            modernas y responsive, trabajando tanto en frontend como en
-            backend con tecnologías como TypeScript, ReactJS, Node.js, Express, MongoDB y PostgreSQL.
+            Estudiante de Licenciatura en Sistemas en Buenos Aires, Argentina.
+            Desarrollo aplicaciones web completas, desde la API y la base de
+            datos hasta la interfaz, con TypeScript, React, Angular, Node.js,
+            NestJS y PostgreSQL.
+          </p>
+
+          <p className="hero-status">
+            Buscando mi primera experiencia profesional como desarrollador.
           </p>
 
           <div className="hero-btns">

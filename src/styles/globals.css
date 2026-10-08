@@ -105,12 +105,15 @@ section {
   margin-bottom: 32px;
 }
 
-.animate[data-visible="false"] {
-  opacity: 0;
-  transform: translateY(40px);
+.animate {
   transition:
     opacity .7s ease,
     transform .7s ease;
+}
+
+.animate[data-visible="false"] {
+  opacity: 0;
+  transform: translateY(40px);
 }
 
 .animate[data-visible="true"] {
@@ -134,4 +137,18 @@ section {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #3d3d3d;
+}
+
+/* ---------- MOVIMIENTO REDUCIDO ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }

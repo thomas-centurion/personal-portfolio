@@ -2,11 +2,18 @@ import "./About.css";
 
 import { useRef } from "react";
 
-import { timeline } from "@/data/about";
+import { education } from "@/data/about";
+import { projects as projectList } from "@/data/projects";
 
 import useCounter from "@/hooks/useCounter";
 import useInView from "@/hooks/useInView";
 import useSectionParallax from "@/hooks/useSectionParallax";
+
+const fullstackCount = projectList.filter(
+  (project) => project.type === "Fullstack"
+).length;
+
+const demoCount = projectList.filter((project) => project.demo).length;
 
 function About() {
   const sectionNumberRef = useRef(null);
@@ -15,9 +22,9 @@ function About() {
 
   const { ref, isVisible } = useInView();
 
-  const projects = useCounter(5, isVisible);
-  const courses = useCounter(4, isVisible);
-  const age = useCounter(21, isVisible);
+  const projects = useCounter(projectList.length, isVisible);
+  const fullstack = useCounter(fullstackCount, isVisible);
+  const demos = useCounter(demoCount, isVisible);
 
   return (
     <section
@@ -45,8 +52,15 @@ function About() {
           </h2>
 
           <p>
-            ¡Hola! Soy Thomas, estudiante de Licenciatura en Sistemas y
-            desarrollador web en formación.
+            ¡Hola! Soy Thomas, desarrollador Full Stack Junior y estudiante
+            de Licenciatura en Sistemas en la UNNOBA.
+          </p>
+
+          <p>
+            En mis proyectos trabajo de punta a punta: APIs REST,
+            autenticación con roles, bases de datos relacionales y no
+            relacionales, interfaces responsive y despliegue, usando
+            TypeScript tanto en el frontend como en el backend.
           </p>
 
           <p>
@@ -66,27 +80,31 @@ function About() {
           <div className="about-stats">
             <div className="stat-row">
               <span className="stat-num">
-                {projects}+
+                {projects}
               </span>
 
               <span className="stat-label">
-                Proyectos
+                Proyectos publicados
               </span>
             </div>
 
             <div className="stat-row">
-              <span className="stat-num"> {courses}+ </span>
-              <span className="stat-label"> Cursos </span>
+              <span className="stat-num"> {fullstack} </span>
+              <span className="stat-label"> Aplicaciones full stack </span>
             </div>
 
             <div className="stat-row">
-              <span className="stat-num"> {age} </span>
-              <span className="stat-label"> Años </span>
+              <span className="stat-num"> {demos} </span>
+              <span className="stat-label"> Demos online </span>
             </div>
           </div>
 
           <div className="about-timeline">
-            {timeline.map((item) => (
+            <span className="section-label">
+              Formación
+            </span>
+
+            {education.map((item) => (
               <div
                 key={item.id}
                 className="timeline-item"

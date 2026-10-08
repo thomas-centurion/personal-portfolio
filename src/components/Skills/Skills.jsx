@@ -17,6 +17,7 @@ function Skills() {
   return (
     <section
       id="skills"
+      className="animate"
       ref={ref}
       data-visible={String(isVisible)}
     >

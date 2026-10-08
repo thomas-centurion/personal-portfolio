@@ -1,18 +1,10 @@
 /* ---------- DESKTOP ---------- */
 
-.project-type-filters,
-.project-filters {
+.project-type-filters {
   display: flex;
   gap: 8px;
   flex-wrap: wrap;
-}
-
-.project-type-filters {
-  margin-bottom: 24px;
-}
-
-.project-filters {
-  margin-bottom: 40px;
+  margin-bottom: 64px;
 }
 
 .filter-btn {
@@ -147,6 +139,17 @@
   height: 100%;
   display: block;
   object-fit: cover;
+  transition: transform 0.6s cubic-bezier(.2, .7, .2, 1);
+}
+
+.project-preview:hover img,
+.project-preview:focus-visible img {
+  transform: scale(1.02);
+}
+
+.project-preview:focus-visible {
+  outline: 1px solid var(--text-muted);
+  outline-offset: 4px;
 }
 
 .project-desc {
@@ -154,8 +157,36 @@
   font-weight: 400;
   color: var(--text-muted);
   line-height: 1.7;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
   max-width: 600px;
+}
+
+.project-highlights {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-width: 600px;
+  margin-bottom: 24px;
+}
+
+.project-highlights li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+.project-highlights li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.8em;
+  width: 8px;
+  height: 1px;
+  background: var(--text-dim);
 }
 
 .project-tags {
@@ -168,7 +199,7 @@
 .project-tag {
   font-size: 0.78rem;
   font-weight: 450;
-  color: var(--text-dim);
+  color: var(--text-muted);
 }
 
 .project-tag:not(:last-child)::after {
@@ -192,10 +223,11 @@
 
 .project-link:hover { color: var(--white); }
 
-.project-link svg { opacity: 0; transition: opacity 0.2s, transform 0.2s; }
+.project-link svg { opacity: 0.5; transition: opacity 0.2s, transform 0.2s; }
 
+.project-card:hover .project-link svg { opacity: 1; }
 
-.project-card:hover .project-link svg { opacity: 1; transform: translateX(2px); }
+.project-link:hover svg { transform: translate(2px, -2px); }
 
 /* ── LIGHTBOX ── */
 
@@ -273,7 +305,7 @@
 
   .projects-header { margin-bottom: clamp(2.5rem, 5vw, 3.5rem); }
 
-  .project-filters { gap: 8px; }
+  .project-type-filters { margin-bottom: 40px; }
 
   .filter-btn { padding: 8px 16px; }
 

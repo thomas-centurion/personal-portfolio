@@ -1,16 +1,15 @@
 # Personal Portfolio
 
-A modern and responsive portfolio built with React to showcase my projects, skills and experience as a Frontend Developer. It features smooth animations, dark/light theme support, interactive UI elements and a functional contact form powered by EmailJS.
+A modern and responsive portfolio built with React to showcase my projects, skills and experience as a Junior Full Stack Developer. It features smooth animations, dark/light theme support, interactive UI elements and a functional contact form powered by EmailJS.
 
 ## Features
 
 - Responsive design
 - Dark / Light theme
 - Smooth scrolling
-- Animated typing effect
 - Custom cursor
 - Scroll progress indicator
-- Interactive project filtering
+- Project filtering by type
 - Image lightbox
 - Contact form with EmailJS
 - Back to top button

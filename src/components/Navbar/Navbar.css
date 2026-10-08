@@ -4,17 +4,27 @@
   position: fixed;
   inset: 0 0 auto 0;
   display: flex;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 48px;
-  background: var(--nav-bg);
   border-bottom: 1px solid var(--border-color);
   z-index: 1000;
-  transition:
-    background-color 0.3s ease,
-    padding 0.3s ease;
+  transition: padding 0.3s ease;
+}
+
+/* Fondo y blur en un pseudo-elemento: si el backdrop-filter estuviera en
+   .navbar, este pasaría a ser el bloque contenedor de sus hijos fixed
+   (.nav-overlay y .nav-links en mobile) y el overlay dejaría de cubrir
+   la pantalla. */
+.navbar::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--nav-bg);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  transition: background-color 0.3s ease;
 }
 
 .nav-logo {
@@ -156,8 +166,8 @@
     padding: 100px 32px 32px;
     overflow-y: auto;
     background: var(--overlay);
-    backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
     border-left: 1px solid var(--border);
     box-shadow: -20px 0 40px rgba(0, 0, 0, .2);
     transform: translateX(100%);

@@ -38,7 +38,13 @@ function ProjectCard({ project, onPreview }) {
           />
         </div>
 
-        <p className="project-desc"> {project.description} </p>
+        <p className="project-desc"> {project.summary} </p>
+
+        <ul className="project-highlights">
+          {project.highlights.map((highlight) => (
+            <li key={highlight}>{highlight}</li>
+          ))}
+        </ul>
 
         <div className="project-tags">
           {project.tags.map((tag) => (

@@ -10,25 +10,12 @@ import useSectionParallax from "@/hooks/useSectionParallax";
 import ProjectCard from "./ProjectCard";
 import Lightbox from "./Lightbox";
 
-const ALL_FILTER = "all";
-
 const ALL_TYPE_FILTER = "all";
 
 const typeFilters = [
   "Frontend",
   "Backend",
   "Fullstack",
-];
-
-const filterOrder = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "React",
-  "Node.js",
-  "Express",
-  "MongoDB",
-  "Firebase",
 ];
 
 function Projects() {
@@ -38,7 +25,6 @@ function Projects() {
 
   const { ref, isVisible } = useInView();
 
-  const [filter, setFilter] = useState(ALL_FILTER);
   const [typeFilter, setTypeFilter] = useState(ALL_TYPE_FILTER);
 
   const [selectedProject, setSelectedProject] = useState(null);
@@ -47,35 +33,13 @@ function Projects() {
     setSelectedProject(null);
   };
 
-  const filters = useMemo(() => {
-    const availableTags = new Set(
-      projects.flatMap((project) => project.tags)
-    );
-
-    return [
-      ALL_FILTER,
-      ...filterOrder.filter((tag) =>
-        availableTags.has(tag)
-      ),
-    ];
-  }, []);
-
   const filteredProjects = useMemo(() => {
-
-    return projects.filter((project) => {
-
-      const matchesType =
+    return projects.filter(
+      (project) =>
         typeFilter === ALL_TYPE_FILTER ||
-        project.type === typeFilter;
-
-      const matchesTechnology =
-        filter === ALL_FILTER ||
-        project.tags.includes(filter);
-
-      return matchesType && matchesTechnology;
-    });
-
-  }, [filter, typeFilter]);
+        project.type === typeFilter
+    );
+  }, [typeFilter]);
 
   return (
     <>
@@ -118,10 +82,6 @@ function Projects() {
                 {currentType}
               </button>
             ))}
-
-          </div>
-
-          <div className="project-filters">
 
           </div>
 
