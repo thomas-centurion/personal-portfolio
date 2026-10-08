@@ -1,5 +1,4 @@
 import portfolio from "@/assets/images/projects/portfolio.webp";
-import ecommerce from "@/assets/images/projects/ecommerce.webp";
 import footballtm from "@/assets/images/projects/footballtm.svg";
 import prime from "@/assets/images/projects/prime.webp";
 import gym from "@/assets/images/projects/gym.webp";

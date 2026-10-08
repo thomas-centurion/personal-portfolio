@@ -48,7 +48,7 @@
   width: 32px;
   height: 32px;
 
-  border: 1px solid var(--text-dim);
+  border: 1px solid var(--decor);
 
   transition:
     width .25s ease,

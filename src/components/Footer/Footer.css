@@ -17,11 +17,6 @@ footer {
 
 .footer-copy span { margin-left: 8px; color: var(--text); }
 
-.footer-made {
-  font-size: 0.78rem;
-  font-weight: 450;
-  color: var(--text-dim);
-}
 
 
 /* ---------- RESPONSIVE ---------- */

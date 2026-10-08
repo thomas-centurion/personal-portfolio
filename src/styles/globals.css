@@ -77,7 +77,7 @@ section {
   font-weight: 800;
   line-height: 1;
   letter-spacing: -0.05em;
-  color: var(--text-dim);
+  color: var(--decor);
   opacity: 0.22;
   pointer-events: none;
   user-select: none;

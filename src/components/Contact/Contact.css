@@ -42,11 +42,31 @@
   width: fit-content;
 }
 
-.social-link:first-child { border-top: 1px solid var(--border-soft); }
+.contact-social > .social-link:first-child { border-top: 1px solid var(--border-soft); }
 
 .social-link:hover { color: var(--white); padding-left: 8px; }
 
-.cv-btn { margin-top: 24px; }
+.contact-email {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.copy-btn {
+  padding: 4px 0;
+  background: none;
+  border: none;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.copy-btn:hover { color: var(--text); }
+
 
 .contact-form {
   display: flex;

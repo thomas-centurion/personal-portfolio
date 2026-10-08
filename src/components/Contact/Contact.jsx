@@ -8,6 +8,8 @@ import useInView from "@/hooks/useInView";
 import useMagnetic from "@/hooks/useMagnetic";
 import useSectionParallax from "@/hooks/useSectionParallax";
 
+const EMAIL = "tcenturion.dev@gmail.com";
+
 function Contact() {
   const { ref, isVisible } = useInView({
     threshold: 0.15,
@@ -27,6 +29,18 @@ function Contact() {
   });
 
   const [loading, setLoading] = useState(false);
+
+  const [copied, setCopied] = useState(false);
+
+  const copyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(EMAIL);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch (error) {
+      console.error("No se pudo copiar el email:", error);
+    }
+  };
 
   const [status, setStatus] = useState({
     type: "",
@@ -66,7 +80,7 @@ function Contact() {
         message: "",
       });
     } catch (error) {
-      console.error("Error al enviar el email:", error);;
+      console.error("Error al enviar el email:", error);
 
       setStatus({
         type: "error",
@@ -102,9 +116,15 @@ function Contact() {
               LinkedIn
             </a>
 
-            <a href="mailto:tcenturion.dev@gmail.com" className="social-link" >
-              Email
-            </a>
+            <div className="contact-email">
+              <a href={`mailto:${EMAIL}`} className="social-link" >
+                {EMAIL}
+              </a>
+
+              <button type="button" className="copy-btn" onClick={copyEmail} aria-label="Copiar email" >
+                {copied ? "Copiado" : "Copiar"}
+              </button>
+            </div>
           </div>
 
           <div className="contact-buttons">
@@ -112,7 +132,7 @@ function Contact() {
               Descargar CV
             </a>
 
-            <a href="https://thomas-centurion.vercel.app/CV_Thomas_Centurion.pdf" className="btn-secondary" target="_blank" rel="noopener noreferrer" ref={seeOnlineButtonRef} >
+            <a href="/CV_Thomas_Centurion.pdf" className="btn-secondary" target="_blank" rel="noopener noreferrer" ref={seeOnlineButtonRef} >
               Ver online
             </a>
           </div>
@@ -144,7 +164,7 @@ function Contact() {
           </button>
 
           {status.message && (
-            <p className={`form-status ${status.type}`}>
+            <p className={`form-status ${status.type}`} role="status">
               {status.message}
             </p>
           )}

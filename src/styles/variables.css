@@ -29,7 +29,10 @@
 
   --text: #e8e8ea;
   --text-muted: #88889a;
-  --text-dim: #555566;
+  --text-dim: #7b7b8c;
+
+  /* Elementos decorativos (no texto): no necesitan contraste AA */
+  --decor: #555566;
 
   --white: #ffffff;
 
@@ -53,7 +56,10 @@
 
   --text: #111113;
   --text-muted: #5a5a6a;
-  --text-dim: #9a9aaa;
+  --text-dim: #686878;
+
+  /* Elementos decorativos (no texto): no necesitan contraste AA */
+  --decor: #9a9aaa;
 
   --white: #111113;
 

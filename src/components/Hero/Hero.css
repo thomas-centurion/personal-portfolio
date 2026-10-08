@@ -113,7 +113,7 @@
 .hero-shape::after {
   content: '✦';
   font-size: 2rem;
-  color: var(--text-dim);
+  color: var(--decor);
   
   animation: spin 20s linear infinite;
 }

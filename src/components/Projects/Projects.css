@@ -20,7 +20,7 @@
 }
 
 .filter-btn:hover {
-  border-color: var(--text-dim);
+  border-color: var(--decor);
   color: var(--text);
 }
 
@@ -131,7 +131,7 @@
 .project-card:hover .project-preview::after { opacity: 1; }
 
 .project-card:hover .project-preview {
-  border-color: var(--text-dim);
+  border-color: var(--decor);
 }
 
 .project-preview img {
@@ -186,7 +186,7 @@
   top: 0.8em;
   width: 8px;
   height: 1px;
-  background: var(--text-dim);
+  background: var(--decor);
 }
 
 .project-tags {
