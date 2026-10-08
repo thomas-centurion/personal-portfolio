@@ -3,7 +3,7 @@ import ecommerce from "@/assets/images/projects/ecommerce.webp";
 import footballtm from "@/assets/images/projects/footballtm.svg";
 import prime from "@/assets/images/projects/prime.webp"; 
 import gym from "@/assets/images/projects/gym.webp"; 
-import virgocueva from "@/assets/images/projects/virgocueva.svg"; 
+import taxflow from "@/assets/images/projects/taxflow.webp"; 
 
 export const projects = [
   {
@@ -39,7 +39,7 @@ export const projects = [
     id: 4,
     title: "Prime Inmobiliaria",
     type: "Fullstack",
-    description: "Aplicación web full stack para una inmobiliaria, desarrollada con React, Node.js, Express y MongoDB. Permite explorar y filtrar propiedades, consultar información detallada y enviar consultas, mientras que el panel de administración incorpora autenticación con JWT y gestión de propiedades y consultas. El proyecto implementa control de acceso por roles, validaciones, manejo de errores, protección de rutas y una interfaz responsive.",
+    description: "Aplicación web full stack para una inmobiliaria, desarrollada con React, Node.js, Express y MongoDB. El desafío principal fue integrar la navegación y búsqueda de propiedades con un panel administrativo sin mezclar responsabilidades. Para resolverlo, separé las funcionalidades públicas y privadas mediante rutas protegidas y autenticación con JWT, incorporando además filtros, validaciones y manejo de errores. El resultado es una aplicación responsive con una arquitectura clara entre frontend, backend y base de datos.",
     image: prime,
     tags: ["JavaScript", "React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/thomas-centurion/prime-inmobiliaria",
@@ -49,7 +49,7 @@ export const projects = [
     id: 5,
     title: "Gym Management",
     type: "Fullstack",
-    description: "Aplicación web full stack para la gestión de un gimnasio, desarrollada con React, TypeScript, Node.js, Express y PostgreSQL. Permite administrar socios, membresías, pagos y asistencias, con autenticación mediante JWT y control de acceso por roles. El proyecto implementa validaciones, manejo de errores, protección de rutas y una interfaz responsive, integrando frontend, backend y base de datos en una aplicación completamente funcional.",
+    description: "Aplicación web full stack para la gestión de un gimnasio, desarrollada con React, TypeScript, Node.js, Express y PostgreSQL. Uno de los principales desafíos fue modelar el ciclo de vida de las membresías, diferenciando períodos actuales, futuros e históricos. Para resolverlo, centralicé las reglas de negocio en el backend y mantuve PostgreSQL como fuente de verdad. También implementé autenticación con JWT, roles, validaciones y manejo de errores, y desplegué frontend y backend de forma independiente.",
     image: gym,
     tags: ["TypeScript", "React", "Tailwind CSS", "Node.js", "Express", "PostgreSQL"],
     github: "https://github.com/thomas-centurion/gym-management/tree/main",
@@ -57,11 +57,11 @@ export const projects = [
   },
   {
   id: 6,
-  title: "La VirgoCueva",
+  title: "TaxFlow",
   type: "Fullstack",
-  description: "Red social privada desarrollada desde cero con React Native, Expo, TypeScript y Supabase, utilizando IA como herramienta de desarrollo. Incluye autenticación, perfiles, publicaciones con imágenes, likes, Revirgs, seguidores, comentarios, notificaciones, búsqueda de usuarios y almacenamiento seguro con Row Level Security.",
-  image: virgocueva,
-  tags: ["TypeScript", "React Native", "Expo", "Supabase", "PostgreSQL"],
-  github: "https://github.com/thomas-centurion/la-virgocueva",
+  description: "Plataforma B2B SaaS para gestión tributaria, donde enfrenté desafíos de persistencia, manejo de fechas, reglas de negocio y testing. También implementé servicios reutilizables para auditoría, documentos y notificaciones, además de automatización con Puppeteer.",
+  image: taxflow,
+  tags: ["TypeScript", "Angular", "NestJS", "PostgreSQL", "Docker"],
+  github: "https://github.com/thomas-centurion/taxflow",
 },
 ];
