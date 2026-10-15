@@ -1,9 +1,11 @@
 import portfolio from "@/assets/images/projects/portfolio.webp";
 import session from "@/assets/images/projects/session.webp";
+import oftalmologo from "@/assets/images/projects/oftalmologo.webp";
 import footballtm from "@/assets/images/projects/footballtm.svg";
 import prime from "@/assets/images/projects/prime.webp";
 import gym from "@/assets/images/projects/gym.webp";
 import taxflow from "@/assets/images/projects/taxflow.webp";
+
 
 export const projects = [
   {
@@ -70,6 +72,22 @@ export const projects = [
   },
   {
     id: 5,
+    title: "SOF Pergamino",
+    type: "Frontend",
+    summary: "Rediseño de práctica del sitio de una clínica oftalmológica de Pergamino, desarrollado con React, TypeScript y Vite y publicado en Cloudflare Workers. No es el sitio oficial.",
+    highlights: [
+      "Sitio de cinco páginas (Inicio, Servicios, Staff, Nosotros y Contacto) con navegación mediante React Router.",
+      "Identidad visual inspirada en las láminas del test de Ishihara: campos de puntos dibujados en canvas que esconden letras.",
+      "Formulario de turnos en tres pasos y formulario de contacto, como maqueta (no envían datos).",
+      "Pensado para celular y para personas con baja visión: tipografía Atkinson Hyperlegible y buen contraste.",
+    ],
+    image: oftalmologo,
+    tags: ["TypeScript", "React", "CSS"],
+    github: "https://github.com/thomas-centurion/sof-oftalmologia",
+    demo: "https://sof-pergamino.thomas-centurion.workers.dev/",
+  },
+  {
+    id: 6,
     title: "Session Haus",
     type: "Frontend",
     summary: "Landing page para Session Haus, una cervecería de Pergamino, desarrollada con React, TypeScript y Vite y publicada en Cloudflare Workers.",
@@ -85,7 +103,7 @@ export const projects = [
     demo: "https://session-haus.thomas-centurion.workers.dev/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Personal Portfolio",
     type: "Frontend",
     summary: "Este sitio: mi portfolio personal desarrollado con React y Vite.",
