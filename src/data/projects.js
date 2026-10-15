@@ -1,4 +1,5 @@
 import portfolio from "@/assets/images/projects/portfolio.webp";
+import session from "@/assets/images/projects/session.webp";
 import footballtm from "@/assets/images/projects/footballtm.svg";
 import prime from "@/assets/images/projects/prime.webp";
 import gym from "@/assets/images/projects/gym.webp";
@@ -69,6 +70,22 @@ export const projects = [
   },
   {
     id: 5,
+    title: "Session Haus",
+    type: "Frontend",
+    summary: "Landing page para Session Haus, una cervecería de Pergamino, desarrollada con React, TypeScript y Vite y publicada en Cloudflare Workers.",
+    highlights: [
+      "Estado abierto/cerrado calculado en tiempo real a partir de los turnos del local, incluidos los que cierran después de la medianoche, y promos destacadas según el día.",
+      "Carta completa con precios y happy hour, organizada por categorías.",
+      "Contenido centralizado en archivos de datos para actualizar precios, promos y horarios sin tocar componentes.",
+      "Imágenes optimizadas en WebP responsive y accesos directos a delivery por WhatsApp, Instagram y Google Maps.",
+    ],
+    image: session,
+    tags: ["TypeScript", "React", "CSS"],
+    github: "https://github.com/thomas-centurion/session-landing",
+    demo: "https://session-haus.thomas-centurion.workers.dev/",
+  },
+  {
+    id: 6,
     title: "Personal Portfolio",
     type: "Frontend",
     summary: "Este sitio: mi portfolio personal desarrollado con React y Vite.",
@@ -82,4 +99,5 @@ export const projects = [
     github: "https://github.com/thomas-centurion/personal-portfolio",
     demo: "https://thomas-centurion.vercel.app/",
   },
+
 ];
