@@ -10,21 +10,6 @@ import taxflow from "@/assets/images/projects/taxflow.webp";
 export const projects = [
   {
     id: 1,
-    title: "TaxFlow",
-    type: "Fullstack",
-    summary: "Plataforma SaaS B2B para centralizar obligaciones tributarias, vencimientos, documentos y auditoría de empresas, con frontend en Angular y backend modular en NestJS.",
-    highlights: [
-      "Autenticación JWT con tres roles y autorización resuelta en el backend, con rate limiting en el login.",
-      "Job programado que detecta vencimientos y genera notificaciones idempotentes, garantizadas con restricciones únicas en PostgreSQL.",
-      "Transiciones de estado validadas, auditoría persistente de cada cambio y gestión de documentos con validación de tipo y contenido.",
-      "Migraciones con TypeORM, PostgreSQL en Docker y tests unitarios y E2E.",
-    ],
-    image: taxflow,
-    tags: ["TypeScript", "Angular", "NestJS", "PostgreSQL", "TypeORM", "Docker"],
-    github: "https://github.com/thomas-centurion/taxflow",
-  },
-  {
-    id: 2,
     title: "Prime Inmobiliaria",
     type: "Fullstack",
     summary: "Aplicación web full stack para una inmobiliaria: catálogo público con búsqueda y filtros, y panel administrativo para gestionar propiedades y consultas.",
@@ -40,7 +25,7 @@ export const projects = [
     demo: "https://prime-inmobiliaria.vercel.app/",
   },
   {
-    id: 3,
+    id: 2,
     title: "Gym Management",
     type: "Fullstack",
     summary: "Aplicación web full stack para administrar socios, membresías, pagos y asistencias de un gimnasio.",
@@ -56,7 +41,7 @@ export const projects = [
     demo: "https://gym-management-demo-frontend.vercel.app/",
   },
   {
-    id: 4,
+    id: 3,
     title: "Football Tournament Manager",
     type: "Backend",
     summary: "API REST para gestionar torneos de fútbol 5, equipos, jugadores y partidos.",
@@ -71,7 +56,7 @@ export const projects = [
     github: "https://github.com/thomas-centurion/football-tournament-manager",
   },
   {
-    id: 5,
+    id: 4,
     title: "SOF Pergamino",
     type: "Frontend",
     summary: "Rediseño de práctica del sitio de una clínica oftalmológica de Pergamino, desarrollado con React, TypeScript y Vite y publicado en Cloudflare Workers. No es el sitio oficial.",
@@ -87,7 +72,7 @@ export const projects = [
     demo: "https://sof-pergamino.thomas-centurion.workers.dev/",
   },
   {
-    id: 6,
+    id: 5,
     title: "Session Haus",
     type: "Frontend",
     summary: "Landing page para Session Haus, una cervecería de Pergamino, desarrollada con React, TypeScript y Vite y publicada en Cloudflare Workers.",
@@ -103,7 +88,7 @@ export const projects = [
     demo: "https://session-haus.thomas-centurion.workers.dev/",
   },
   {
-    id: 7,
+    id: 6,
     title: "Personal Portfolio",
     type: "Frontend",
     summary: "Este sitio: mi portfolio personal desarrollado con React y Vite.",
