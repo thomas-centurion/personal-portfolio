@@ -8,7 +8,6 @@ export const skillGroups = [
       "JavaScript",
       "TypeScript",
       "React",
-      "Angular",
       "Tailwind CSS",
       "Bootstrap",
     ],
@@ -19,7 +18,6 @@ export const skillGroups = [
     items: [
       "Node.js",
       "Express",
-      "NestJS",
       "REST APIs",
       "JWT",
       "bcrypt",
