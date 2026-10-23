@@ -31,8 +31,8 @@ function Hero() {
           <p className="hero-desc">
             Estudiante de Licenciatura en Sistemas en Buenos Aires, Argentina.
             Desarrollo aplicaciones web completas, desde la API y la base de
-            datos hasta la interfaz, con TypeScript, React, Angular, Node.js,
-            NestJS y PostgreSQL.
+            datos hasta la interfaz, con TypeScript, React, Node.js, Express,
+            PostgreSQL y MongoDB.
           </p>
 
           <p className="hero-status">

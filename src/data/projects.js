@@ -1,15 +1,31 @@
 import portfolio from "@/assets/images/projects/portfolio.webp";
+import isaac from "@/assets/images/projects/isaac.webp";
 import session from "@/assets/images/projects/session.webp";
 import oftalmologo from "@/assets/images/projects/oftalmologo.webp";
 import footballtm from "@/assets/images/projects/footballtm.svg";
 import prime from "@/assets/images/projects/prime.webp";
 import gym from "@/assets/images/projects/gym.webp";
-import taxflow from "@/assets/images/projects/taxflow.webp";
 
 
 export const projects = [
   {
     id: 1,
+    title: "Isaac Atlas",
+    type: "Fullstack",
+    summary: "Bitácora comunitaria de seeds y runs de The Binding of Isaac: Repentance+, donde los usuarios registran sus partidas y la comunidad las busca, las vota y las clasifica. Monorepo con React, Node.js y MongoDB.",
+    highlights: [
+      "Buscador de runs por personaje, ítems iniciales, ítems que tiene y que no tiene, dificultad y resultado.",
+      "Votos y veredictos con rankings hot, top (límite inferior de Wilson) y new, más una seed del día.",
+      "Cuentas con email y contraseña, Google o Steam, perfiles públicos, reportes y panel de moderación.",
+      "Monorepo con paquete compartido de esquemas Zod, tests contra un MongoDB real, CI y despliegue en Render; interfaz bilingüe ES/EN, accesible (WCAG AA) y responsive.",
+    ],
+    image: isaac,
+    tags: ["TypeScript", "React", "Node.js", "Express", "MongoDB", "Docker"],
+    github: "https://github.com/thomas-centurion/isaac-atlas",
+    demo: "https://isaac-atlas.onrender.com/",
+  },
+  {
+    id: 2,
     title: "Prime Inmobiliaria",
     type: "Fullstack",
     summary: "Aplicación web full stack para una inmobiliaria: catálogo público con búsqueda y filtros, y panel administrativo para gestionar propiedades y consultas.",
@@ -25,7 +41,7 @@ export const projects = [
     demo: "https://prime-inmobiliaria.vercel.app/",
   },
   {
-    id: 2,
+    id: 3,
     title: "Gym Management",
     type: "Fullstack",
     summary: "Aplicación web full stack para administrar socios, membresías, pagos y asistencias de un gimnasio.",
@@ -41,7 +57,7 @@ export const projects = [
     demo: "https://gym-management-demo-frontend.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Football Tournament Manager",
     type: "Backend",
     summary: "API REST para gestionar torneos de fútbol 5, equipos, jugadores y partidos.",
@@ -56,7 +72,7 @@ export const projects = [
     github: "https://github.com/thomas-centurion/football-tournament-manager",
   },
   {
-    id: 4,
+    id: 5,
     title: "SOF Pergamino",
     type: "Frontend",
     summary: "Rediseño de práctica del sitio de una clínica oftalmológica de Pergamino, desarrollado con React, TypeScript y Vite y publicado en Cloudflare Workers. No es el sitio oficial.",
@@ -72,7 +88,7 @@ export const projects = [
     demo: "https://sof-pergamino.thomas-centurion.workers.dev/",
   },
   {
-    id: 5,
+    id: 6,
     title: "Session Haus",
     type: "Frontend",
     summary: "Landing page para Session Haus, una cervecería de Pergamino, desarrollada con React, TypeScript y Vite y publicada en Cloudflare Workers.",
@@ -88,7 +104,7 @@ export const projects = [
     demo: "https://session-haus.thomas-centurion.workers.dev/",
   },
   {
-    id: 6,
+    id: 7,
     title: "Personal Portfolio",
     type: "Frontend",
     summary: "Este sitio: mi portfolio personal desarrollado con React y Vite.",

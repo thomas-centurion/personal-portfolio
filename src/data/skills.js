@@ -29,7 +29,6 @@ export const skillGroups = [
     items: [
       "PostgreSQL",
       "MongoDB",
-      "TypeORM",
       "Mongoose",
       "Firebase",
     ],
