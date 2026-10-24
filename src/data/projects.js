@@ -2,7 +2,7 @@ import portfolio from "@/assets/images/projects/portfolio.webp";
 import isaac from "@/assets/images/projects/isaac.webp";
 import session from "@/assets/images/projects/session.webp";
 import oftalmologo from "@/assets/images/projects/oftalmologo.webp";
-import footballtm from "@/assets/images/projects/footballtm.svg";
+import eventos from "@/assets/images/projects/eventos.webp";
 import prime from "@/assets/images/projects/prime.webp";
 import gym from "@/assets/images/projects/gym.webp";
 
@@ -58,18 +58,18 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Football Tournament Manager",
+    title: "Plataforma de Eventos e Inscripciones",
     type: "Backend",
-    summary: "API REST para gestionar torneos de fútbol 5, equipos, jugadores y partidos.",
+    summary: "API REST donde organizadores publican eventos y los usuarios se inscriben, con Node.js, Express y MongoDB. Proyecto final del curso Backend II de Coderhouse.",
     highlights: [
-      "Arquitectura por capas con Controllers, Services, Repositories y DAO.",
-      "Persistencia con MongoDB y Mongoose, con relaciones entre entidades.",
-      "Generación de tablas de posiciones a partir de los resultados de los partidos.",
-      "Validaciones de datos y manejo centralizado de errores.",
+      "Autenticación con Passport y JWT guardado en cookie, con tres roles (user, organizer y admin) y permisos sobre recursos propios.",
+      "Inscripciones con control de cupos y emails de confirmación con Nodemailer.",
+      "Arquitectura por capas con DAO, Repository, Service y DTO.",
+      "Listado de eventos con filtros, paginación y orden, más pruebas automatizadas y una colección de Postman.",
     ],
-    image: footballtm,
-    tags: ["Node.js", "Express", "MongoDB"],
-    github: "https://github.com/thomas-centurion/football-tournament-manager",
+    image: eventos,
+    tags: ["Node.js", "Express", "MongoDB", "JWT"],
+    github: "https://github.com/thomas-centurion/coderhouse-backend-2",
   },
   {
     id: 5,
